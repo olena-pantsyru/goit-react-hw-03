@@ -1,3 +1,38 @@
 .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #3a3a3a;
     margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    color: #ff5757;
+}
+
+.text {
+    color: white;
+}
+
+.button {
+    background-color: #ff5757;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }

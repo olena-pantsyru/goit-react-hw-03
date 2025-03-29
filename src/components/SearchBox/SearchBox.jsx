@@ -1,23 +1,13 @@
-import PropTypes from "prop-types";
 import css from "./SearchBox.module.css";
 
-export default function SearchBox({ filter, setFilter }) {
+export default function SearchBox({ value, onChangeValue }) {
   return (
-    <div className={css.searchBox}>
-      <label>
-        Find contacts by name
-        <input
-          type="text"
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-          placeholder="Search..."
-        />
-      </label>
-    </div>
+    <input
+      className={css.input}
+      type="text"
+      placeholder="Search contacts..."
+      value={value}
+      onChange={(e) => onChangeValue(e.target.value)}
+    />
   );
 }
-
-SearchBox.propTypes = {
-  filter: PropTypes.string.isRequired,
-  setFilter: PropTypes.func.isRequired,
-};

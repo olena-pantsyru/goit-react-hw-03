@@ -1,5 +1,5 @@
 import { BiSolidUser, BiPhone } from "react-icons/bi";
-import css from "./ContactItem.module.css";
+import css from "./Contact.module.css";
 export default function ContactItem({ contact: { id, name, number }, onDelete }) {
   return (
     <li className={css.item} id={id}>
